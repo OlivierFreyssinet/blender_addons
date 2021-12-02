@@ -173,7 +173,6 @@ class InstantMeshesRemesh(bpy.types.Operator):
             mesh.hide_set(True)
             imported_mesh.select_set(state=False)
             os.remove(output)
-            bpy.context.space_data.overlay.show_wireframes = True
 
             return {'FINISHED'}
         else:
